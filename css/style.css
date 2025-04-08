@@ -235,7 +235,7 @@ main {
 
 .card_sotenibilidad {
     padding: 200px;
-    background-image: url("imagenes/sostenibilidad/imagen_1.png");
+    background-image: url("../imagenes/sostenibilidad/imagen_1.png");
     background-size: cover;
     background-position: center;
     position: relative;
