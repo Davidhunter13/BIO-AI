@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Ai - Sostenibilidad</title>
+    <link rel="icon" href="imagenes/logos/logo.png" type="image/png">
+
+    <!-- ION-ICONS  -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- LINK DE BOOTSTRAP POR CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- LINK DE CSS  -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sostenibilidad.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- scroll -->
+    <script>
+        configObj = {
+            "buttonD": "M8 17.333h5.333v4C13.333 22.806 14.527 24 16 24c1.473 0 2.667-1.194 2.667-2.667v-4H24L16 8l-8 9.333z",
+            "buttonT": "translate(-1088 -172) translate(832 140) translate(32 32) translate(224)",
+            "shadowSize": "none",
+            "roundnessSize": "12px",
+            "buttonDToBottom": "8px",
+            "buttonDToRight": "8px",
+            "selectedBackgroundColor": "#2B5AC6",
+            "selectedIconColor": "#ffffff",
+            "buttonWidth": "40px",
+            "buttonHeight": "40px",
+            "svgWidth": "32px",
+            "svgHeight": "32px"
+        };
+
+        function createButton(obj, pageSimulator) {
+            const body = document.querySelector("body");
+            backToTopButton = document.createElement("span");
+            backToTopButton.classList.add("softr-back-to-top-button");
+            backToTopButton.id = "softr-back-to-top-button";
+            pageSimulator ? pageSimulator.appendChild(backToTopButton) : body.appendChild(backToTopButton);
+            backToTopButton.style.width = obj.buttonWidth;
+            backToTopButton.style.height = obj.buttonHeight;
+            backToTopButton.style.marginRight = obj.buttonDToRight;
+            backToTopButton.style.marginBottom = obj.buttonDToBottom;
+            backToTopButton.style.borderRadius = obj.roundnessSize;
+            backToTopButton.style.boxShadow = obj.shadowSize;
+            backToTopButton.style.color = obj.selectedBackgroundColor;
+            backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
+            pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";
+            backToTopButton.style.outline = "none";
+            backToTopButton.style.bottom = "0px";
+            backToTopButton.style.right = "0px";
+            backToTopButton.style.cursor = "pointer";
+            backToTopButton.style.textAlign = "center";
+            backToTopButton.style.border = "solid 2px currentColor";
+            backToTopButton.innerHTML =
+                '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
+            backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");
+            backToTopButtonSvg.style.verticalAlign = "middle";
+            backToTopButtonSvg.style.margin = "auto";
+            backToTopButtonSvg.style.justifyContent = "center";
+            backToTopButtonSvg.style.width = obj.svgWidth;
+            backToTopButtonSvg.style.height = obj.svgHeight;
+            backToTopButton.appendChild(backToTopButtonSvg);
+            backToTopButtonImg = document.querySelector(".back-to-top-button-img");
+            backToTopButtonImg.style.fill = obj.selectedIconColor;
+            backToTopButtonSvg.appendChild(backToTopButtonImg);
+            backToTopButtonImg.setAttribute("d", obj.buttonD);
+            backToTopButtonImg.setAttribute("transform", obj.buttonT);
+            if (!pageSimulator) {
+                backToTopButton.style.display = "none";
+                window.onscroll = function () {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        backToTopButton.style.display = "block";
+                    } else {
+                        backToTopButton.style.display = "none";
+                    }
+                };
+                backToTopButton.onclick = function () {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                };
+            }
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            createButton(configObj, null);
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="loader">
+        <span class="loader"></span>
+    </div>
+
+    <header class="m-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img class="logo" src="imagenes/logos/logo.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item seleccionado">
+                            <a class="nav-link" href="sostenibilidad.html">Sostenibilidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="seccion-sostenibilidad">
+            <div class="triangulos">
+                <div class="triangle-abajo"></div>
+                <div class="triangle-arriba"></div>
+            </div>
+
+            <div class="contenido-texto">
+                <h1>
+                    <span>Sostenibilidad</span> y
+                    <span class="resaltado">Responsabilidad Social</span>
+                </h1>
+                <p>Comprometidos con un futuro donde la salud y el planeta prosperen juntos.</p>
+            </div>
+        </div>
+
+
+
+        <!-- Compromiso con el Medio Ambiente -->
+        <section class="bloque blanco">
+            <h2>Compromiso con el <span>Medio Ambiente</span></h2>
+            <p>En Bial Medical Technologies, estamos comprometidos con la sostenibilidad y la innovación para minimizar
+                nuestro impacto ambiental y fomentar un desarrollo logístico sostenible.</p>
+        </section>
+
+        <section class="bloque azul contenido-ambiente">
+            <div class="columna-img">
+                <img src="imagenes/sostenibilidad/arbol.png" alt="Maceta">
+            </div>
+            <div class="columna-texto">
+                <h3>Eficiencia Energética y Reducción de Huella de Carbono</h3>
+                <ul>
+                    <li>Implementamos centros de datos con consumo energético optimizado.</li>
+                    <li>Usamos fuentes de energía renovable para reducir la emisión de carbono.</li>
+                    <li>Optimizamos procesos logísticos para minimizar el impacto ambiental.</li>
+                </ul>
+
+                <h3>Reciclaje y Gestión Responsable de Residuos</h3>
+                <ul>
+                    <li>Reciclamos componentes electrónicos y materiales blandos.</li>
+                    <li>Colaboramos con proveedores certificados ecológicamente.</li>
+                </ul>
+
+                <h3>Uso Responsable de Recursos</h3>
+                <ul>
+                    <li>Reducimos el consumo de agua mediante tecnologías de reciclado.</li>
+                    <li>Utilizamos materiales sostenibles en la fabricación de productos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="galeria-ambiental">
+            <div class="galeria-grid">
+                <div class="img-izquierda">
+                    <img src="imagenes/sostenibilidad/logo.png" alt="Imagen izquierda">
+                </div>
+                <div class="bloque-derecha">
+                    <div class="img-arriba">
+                        <img src="imagenes/sostenibilidad/pantano.png" alt="Pantano">
+                    </div>
+                    <div class="img-abajo">
+                        <img src="imagenes/sostenibilidad/medio.png" alt="Medio ambiente">
+                        <img src="imagenes/sostenibilidad/animal.png" alt="Animal">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Responsabilidad Social Empresarial -->
+        <section class="bloque blanco">
+            <h2>Responsabilidad <span>Social Empresarial</span></h2>
+            <p>En Bial Medical Technologies, creemos que la tecnología debe ser una herramienta para enfocarse en
+                mejorar el acceso a servicios de salud y apoyar a las comunidades más vulnerables.</p>
+        </section>
+
+        <!-- Compromiso Social -->
+        <section class="bloque contenido-social">
+            <div class="columna-texto">
+                <h3>Acceso a la Salud en Comunidades Rurales</h3>
+                <ul>
+                    <li>Donación de equipos de diagnóstico asistido por IA a hospitales rurales.</li>
+                    <li>Capacitación para personal médico en áreas de difícil acceso.</li>
+                    <li>Proyectos de telemedicina para conectar a especialistas con comunidades remotas.</li>
+                </ul>
+
+                <h3>Programas de Capacitación y Formación</h3>
+                <ul>
+                    <li>Alianzas con universidades y centros de salud para formar profesionales en tecnología médica.
+                    </li>
+                    <li>Programas gratuitos de certificación para médicos y personal técnico.</li>
+                </ul>
+
+                <h3>Colaboración con ONGs y Gobiernos Locales</h3>
+                <ul>
+                    <li>Desarrollo de tecnologías de monitoreo e infraestructura de salud en comunidades vulnerables.
+                    </li>
+                    <li>Convenios de telemedicina con hospitales públicos y centros rurales.</li>
+                    <li>Participación en campañas de prevención y educación sanitaria.</li>
+                </ul>
+            </div>
+
+            <div class="columna-img">
+                <img src="imagenes/sostenibilidad/manos.png" alt="Saludo">
+            </div>
+        </section>
+
+        <!-- Galería Social -->
+        <section class="galeria-social">
+            <img src="imagenes/sostenibilidad/computador.png" alt="Equipo trabajando">
+            <img src="imagenes/sostenibilidad/juzgado.png" alt="Tecnología médica">
+            <img src="imagenes/sostenibilidad/cirujanos.png" alt="Reunión de trabajo">
+        </section>
+
+    </main>
+    <!-- FOOTER  -->
+    <footer class="container-fluid">
+        <div class="row p-0 m-0">
+            <div class="col-lg-3 col-12 text">
+                <img class="logo" src="imagenes/logos/logo.png" alt="logo">
+            </div>
+
+            <div class="col-lg-9 col-12 text">
+                <div>
+                    <ul class="d-flex">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item seleccionado">
+                            <a class="nav-link" href="sostenibilidad.html">Sostenibilidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col-lg-6 col-12 p-0 datos">
+                        <h4><ion-icon name="home"></ion-icon>Direccion: Cra 92 # 73 a 72</h4>
+                        <h4><ion-icon name="call"></ion-icon>Telefono: 320 3498531</h4>
+                    </div>
+                    <div class="col-lg-6 col-12 p-0 redes">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- jquery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <script src="js/home.js"></script>
+
+</body>
+
+</html>
