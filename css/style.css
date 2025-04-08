@@ -1,0 +1,619 @@
+main {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* BANNER  */
+
+#carouselExampleInterval {
+    height: 80dvh;
+    position: relative;
+}
+
+#carouselExampleInterval::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to right, transparent, var(--azul_claro));
+    z-index: -1;
+}
+
+#carouselExampleInterval .carousel-inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#carouselExampleInterval .carousel-inner .carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+#carouselExampleInterval .carousel-inner .carousel-item figure {
+    height: 100%;
+    width: 100%;
+}
+
+
+#carouselExampleInterval .carousel-inner .carousel-item figure img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators {
+    list-style: none;
+}
+
+.carousel-indicators li {
+    background-color: var(--azul-app) !important;
+    border-radius: 100%;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.titulo_row {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.titulo_row .titulo_col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.titulo_row .titulo_col:nth-child(2) {
+    padding: 0px 100px;
+    backdrop-filter: blur(5px);
+}
+
+
+.titulo_row .titulo_col h1,
+.titulo_row .titulo_col p {
+    color: var(--negro);
+    margin: 0px;
+    text-align: left;
+}
+
+
+
+/* SERVICIOS DESTACADOS  */
+
+.card_destacados {
+    margin: 100px auto;
+    padding: 0px;
+}
+
+.card_destacados h2 {
+    color: var(--gris);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card_destacados .row {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card_destacados .row .card {
+    padding: 20px;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.card_destacados .row .card figure {
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--card);
+}
+
+.card_destacados .row .card figure::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 8px;
+    height: 100%;
+    background: var(--azul_claro);
+    z-index: 1;
+}
+
+.card_destacados .row .card figure img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0px;
+}
+
+.card_destacados .row .card figure figcaption {
+    padding: 20px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.btn_saber {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+/* BioAi Medical Technologies Y Quienes somos */
+
+.card_tegnologia {
+    height: max-content;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.card_tegnologia .row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_tegnologia .row .text_article {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+}
+
+.card_tegnologia .row .text_article h2 {
+    color: var(--gris);
+}
+
+.card_tegnologia .row .img_article {
+    height: max-content;
+    padding: 0px;
+    position: relative;
+}
+
+
+.card_tegnologia .row .img_before::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background: var(--azul_claro);
+    z-index: -1;
+}
+
+.card_tegnologia .row .img_before_2::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, var(--blanco));
+    z-index: 1;
+}
+
+.card_tegnologia .row .img_before_2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, transparent, var(--blanco));
+    z-index: 1;
+}
+
+.card_tegnologia .row .img_article img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* SOSTENIBLIDAD  */
+
+.card_sotenibilidad {
+    padding: 200px;
+    background-image: url("imagenes/sostenibilidad/imagen_1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card_sotenibilidad::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: var(--azul-app);
+    z-index: -1;
+}
+
+.card_sotenibilidad article {
+    background-color: #f7f7f892;
+    backdrop-filter: blur(5px);
+}
+
+.card_sotenibilidad article h2 {
+    color: #000000 !important;
+}
+
+/* EQUIPO  */
+
+.card_equipo_padre h2 {
+    color: var(--azul_claro);
+}
+
+.card_equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card_equipo img {
+    padding: 3px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px 0px var(--sombra);
+}
+
+/* PORTATIL */
+@media screen and (min-width: 1000px) and (max-width:1650px) {
+
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 60px auto;
+    }
+
+    /* BioAi Medical Technologies Y Quienes somos */
+
+    .card_tegnologia {
+
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    /* SOSTENIBLIDAD  */
+
+    .card_sotenibilidad {
+        padding: 100px;
+    }
+
+    /* EQUIPO  */
+
+    .card_equipo img {
+        padding: 3px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 650px) and (max-width:990px) {
+
+    /* BANNER  */
+
+    #carouselExampleInterval {
+        height: 50dvh;
+    }
+
+    .titulo_row .titulo_col_2 {
+        display: none !important;
+    }
+
+    .titulo_row .titulo_col {
+        height: max-content;
+        width: 80%;
+        margin: auto;
+        padding: 30px !important;
+    }
+
+    /* SERVICIOS_DESTACADOS */
+
+    .card_destacados .row .card {
+        height: max-content;
+    }
+
+    .card_destacados .row .card figure {
+        height: max-content;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 100%;
+    }
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 40px auto;
+    }
+
+    /* BioAi Medical Technologies Y Quienes somos */
+
+    .card_tegnologia .row .img_article {
+        width: max-content;
+        display: flex;
+        align-items: center;
+    }
+
+    .card_tegnologia .row .img_before::before {
+        width: 50%;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+    }
+
+    .card_somos {
+        flex-direction: column-reverse;
+    }
+
+    .card_tegnologia .row .img_article img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .card_tegnologia {
+
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .card_tegnologia .row .text_article {
+        padding: 50px;
+    }
+
+    /* SOSTENIBLIDAD  */
+
+    .card_sotenibilidad {
+        padding: 60px;
+    }
+
+    /* EQUIPO  */
+
+    .card_equipo img {
+        padding: 3px;
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+/* CELULAR */
+
+@media screen and (min-width: 421px) and (max-width:650px) {
+    /* BANNER  */
+
+    #carouselExampleInterval {
+        height: 50dvh;
+    }
+
+    .titulo_row .titulo_col_2 {
+        display: none !important;
+    }
+
+    .titulo_row .titulo_col {
+        height: max-content;
+        width: 90%;
+        margin: auto;
+        padding: 20px !important;
+    }
+
+    #carouselExampleInterval .carousel-inner .carousel-item figure img {
+        object-position: left;
+    }
+
+    /* SERVICIOS_DESTACADOS */
+    .card_destacados {
+        padding: 0px 10px;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 100% !important;
+    }
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 40px auto;
+    }
+
+    .card_destacados .row .card{
+        padding: 20px 0px;
+    }
+
+    .card_destacados p{
+        height: 70px;
+        overflow-y: scroll;
+    }
+    /* BioAi Medical Technologies Y Quienes somos */
+    .card_tegnologia .row {
+        margin: 0px !important;
+    }
+
+    .card_tegnologia .row .img_article {
+        width: max-content;
+        display: flex;
+        align-items: center;
+    }
+
+    .card_tegnologia .row .img_before::before {
+        width: 50%;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+    }
+
+    .card_somos {
+        flex-direction: column-reverse;
+    }
+
+    .card_tegnologia .row .img_article img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .card_tegnologia {
+
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .card_tegnologia .row .text_article {
+        padding: 20px;
+    }
+
+    /* SOSTENIBLIDAD  */
+
+    .card_sotenibilidad {
+        padding: 20px;
+    }
+
+    /* EQUIPO  */
+
+    .card_equipo {
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--card);
+        padding: 20px 0px;
+    }
+
+    .card_equipo img {
+        padding: 3px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media screen and (min-width: 320px) and (max-width:420px) {
+    /* BANNER  */
+
+    #carouselExampleInterval {
+        height: 50dvh;
+    }
+
+    .titulo_row .titulo_col_2 {
+        display: none !important;
+    }
+
+    .titulo_row .titulo_col {
+        height: max-content;
+        width: 90%;
+        margin: auto;
+        padding: 20px !important;
+    }
+
+    #carouselExampleInterval .carousel-inner .carousel-item figure img {
+        object-position: left;
+    }
+
+    /* SERVICIOS_DESTACADOS */
+    .card_destacados {
+        padding: 0px 10px;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 100% !important;
+    }
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 40px auto;
+    }
+
+    .card_destacados .row .card{
+        padding: 20px 0px;
+    }
+
+    .card_destacados p{
+        height: 70px;
+        overflow-y: scroll;
+    }
+    /* BioAi Medical Technologies Y Quienes somos */
+    .card_tegnologia .row {
+        margin: 0px !important;
+    }
+
+    .card_tegnologia .row .img_article {
+        width: max-content;
+        display: flex;
+        align-items: center;
+    }
+
+    .card_tegnologia .row .img_before::before {
+        width: 50%;
+        left: 0px;
+        right: 0px;
+        margin: 0 auto;
+    }
+
+    .card_somos {
+        flex-direction: column-reverse;
+    }
+
+    .card_tegnologia .row .img_article img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .card_tegnologia {
+
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .card_tegnologia .row .text_article {
+        padding: 20px;
+    }
+
+    /* SOSTENIBLIDAD  */
+
+    .card_sotenibilidad {
+        padding: 20px;
+    }
+
+    /* EQUIPO  */
+
+    .card_equipo {
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--card);
+        padding: 20px 0px;
+    }
+
+    .card_equipo img {
+        padding: 3px;
+        width: 200px;
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Ai - Servicios</title>
+    <link rel="icon" href="imagenes/logos/logo.png" type="image/png">
+
+    <!-- ION-ICONS  -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- LINK DE BOOTSTRAP POR CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- LINK DE CSS  -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <span class="loader"></span>
+    </div>
+
+    <header class="m-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img class="logo" src="imagenes/logos/logo.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item seleccionado">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- BANNER  -->
+        <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores (puntos) -->
+            <ul class="carousel-indicators d-none">
+                <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></li>
+            </ul>
+            <main class="carousel-inner">
+                <article class="carousel-item active" data-bs-interval="10000">
+                    <figure>
+                        <img src="imagenes/destacados/fondo.png" class="d-block w-100" alt="Imagen 1">
+                        <figcaption class="visually-hidden">Imagen 1 del carrusel</figcaption>
+                    </figure>
+                </article>
+            </main>
+
+            <div class="row titulo_row">
+                <div class="col-lg-6 col-12 titulo_col">
+                    <h1>Nuestros <strong>Servicios</strong>
+                    </h1>
+                    <p>En BioAI Medical Technologies, combinamos inteligencia artificial y tecnología médica para
+                        ofrecer soluciones innovadoras que transforman la atención en salud.</p>
+                </div>
+                <div class="col-lg-6 col-12 titulo_col titulo_col_2">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SERVICIOS DESTACADOS -->
+
+        <section class="container card_destacados">
+            <h2>Servicios</h2>
+            <div class="row" id="servicios">
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered"> <!-- Aquí añadimos modal-dialog-centered -->
+            <div class="modal-content">
+                <div class="modal-body row p-0">
+                    <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="col-lg-7 m-0 contenido"> <!-- mx-auto centra horizontalmente si es necesario -->
+                        <h2 class="m-0 p-0" id="titulo"></h2> <!-- centrado del texto -->
+                        <div class="m-0" id="modalBody"></div> <!-- centrado del contenido -->
+                    </div>
+                    <div class="col-lg-5 m-0 imagen"> <!-- mx-auto centra horizontalmente si es necesario -->
+                        <img src="" alt="imagen" id="imagen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <footer class="container-fluid">
+        <div class="row p-0 m-0">
+            <div class="col-lg-3 col-12 text">
+                <img class="logo" src="imagenes/logos/logo.png" alt="logo">
+            </div>
+
+            <div class="col-lg-9 col-12 text">
+                <div>
+                    <ul class="d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item seleccionado">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col-lg-6 col-12 p-0 datos">
+                        <h4><ion-icon name="home"></ion-icon>Direccion: Cra 92 # 73 a 72</h4>
+                        <h4><ion-icon name="call"></ion-icon>Telefono: 320 3498531</h4>
+                    </div>
+                    <div class="col-lg-6 col-12 p-0 redes">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+    <script src="js/home.js"></script>
+
+    <!-- SCRIPT DE BOOTSTRAP POR CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script src="js/servicios.js"></script>
+</body>
+
+</html>

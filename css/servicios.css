@@ -1,0 +1,454 @@
+main {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* BANNER  */
+
+#carouselExampleInterval {
+    height: 80dvh;
+    position: relative;
+}
+
+#carouselExampleInterval::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to right, transparent, var(--azul_claro));
+    z-index: -1;
+}
+
+#carouselExampleInterval .carousel-inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#carouselExampleInterval .carousel-inner .carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+#carouselExampleInterval .carousel-inner .carousel-item figure {
+    height: 100%;
+    width: 100%;
+}
+
+
+#carouselExampleInterval .carousel-inner .carousel-item figure img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators {
+    list-style: none;
+}
+
+.carousel-indicators li {
+    background-color: var(--azul-app) !important;
+    border-radius: 100%;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.titulo_row {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.titulo_row .titulo_col {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.titulo_row .titulo_col:nth-child(1) {
+    padding: 0px 100px;
+    backdrop-filter: blur(5px);
+}
+
+
+.titulo_row .titulo_col h1,
+.titulo_row .titulo_col p {
+    color: var(--negro);
+    margin: 0px;
+    text-align: left;
+}
+
+
+.titulo_row .titulo_col h1 {
+    position: relative;
+}
+
+.titulo_row .titulo_col h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    background-color: var(--azul_claro);
+    width: 50%;
+    height: 5px;
+}
+
+
+/* SERVICIOS DESTACADOS  */
+
+.card_destacados {
+    margin: 100px auto;
+    padding: 0px;
+}
+
+.card_destacados h2 {
+    color: var(--gris);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card_destacados .row {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.card_destacados .row .card {
+    padding: 20px;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.card_destacados .row .card figure {
+    height: 100%;
+    position: relative;
+    background-color: var(--card);
+}
+
+.card_destacados .row .card figure::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background: var(--azul-app);
+    z-index: 1;
+}
+
+.card_destacados .row .card figure img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0px;
+    box-shadow: 0px 3px 3px 0px var(--sombra);
+}
+
+.card_destacados .row .card figure figcaption {
+    padding: 20px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    text-align: center;
+    background-image: url("../imagenes/destacados/cubos.png");
+    background-size: contain;
+}
+
+.card_destacados .row .card figure figcaption .btn_mas {
+    margin: auto;
+}
+
+
+/* CERRAR  */
+
+.cerrar {
+    background-image: url("../imagenes/destacados/cerrar.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    z-index: 9;
+}
+
+
+/* modal  */
+
+.modal-body {
+    background-color: var(--card);
+    border-radius: 10px;
+}
+
+.modal-body h2 {
+    margin-bottom: 20px !important;
+}
+
+
+.modal-body #modalBody {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.modal-body .contenido {
+    padding: 40px !important;
+}
+
+.modal-body .imagen {
+    padding: 0px;
+    position: relative;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.modal-body .imagen img {
+    object-position: left;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+
+/* PORTATIL */
+@media screen and (min-width: 1000px) and (max-width:1650px) {
+
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 30px auto;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 200px;
+
+    }
+
+    .modal-body #modalBody {
+        height: 400px;
+        overflow-y: auto;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 650px) and (max-width:990px) {
+
+    /* BANNER  */
+
+    #carouselExampleInterval {
+        height: 50dvh;
+    }
+
+    .titulo_row .titulo_col_2 {
+        display: none !important;
+    }
+
+    .titulo_row .titulo_col {
+        height: max-content;
+        width: 80%;
+        margin: auto;
+        padding: 30px !important;
+    }
+
+    /* SERVICIOS_DESTACADOS */
+
+    .card_destacados .row .card {
+        height: max-content;
+    }
+
+    .card_destacados .row .card figure {
+        height: max-content;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 100%;
+    }
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 40px auto;
+    }
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 30px auto;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 200px;
+
+    }
+
+    .modal-body #modalBody {
+        height: 250px;
+        overflow-y: auto;
+    }
+
+
+    .modal-body .imagen {
+
+        clip-path: polygon(50% 0, 99% 43%, 100% 100%, 0 100%, 0 43%);
+    }
+
+}
+
+/* CELULAR */
+
+@media screen and (min-width: 421px) and (max-width:650px) {
+    /* BANNER  */
+
+    #carouselExampleInterval {
+        height: 50dvh;
+    }
+
+    .titulo_row .titulo_col_2 {
+        display: none !important;
+    }
+
+    .titulo_row .titulo_col {
+        height: max-content;
+        width: 90%;
+        margin: auto;
+        padding: 20px !important;
+    }
+
+    #carouselExampleInterval .carousel-inner .carousel-item figure img {
+        object-position: right;
+    }
+
+    /* SERVICIOS_DESTACADOS */
+    .card_destacados {
+        padding: 0px 10px;
+    }
+
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 40px auto;
+    }
+
+    .card_destacados .row .card {
+        padding: 20px 0px;
+    }
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 30px auto;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 200px;
+    }
+
+    .modal-body #modalBody {
+        height: 35dvh;
+        overflow-y: auto;
+    }
+
+    .modal-body .contenido {
+        padding: 40px 20px !important;
+    }
+
+
+    .modal-body .imagen {
+        clip-path: polygon(50% 0, 99% 43%, 100% 100%, 0 100%, 0 43%);
+    }
+
+    .cerrar {
+        height: 40px;
+        width: 40px;
+        right: 0px;
+        top: -1px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width:420px) {
+    /* BANNER  */
+
+    #carouselExampleInterval {
+        height: 50dvh;
+    }
+
+    .titulo_row .titulo_col_2 {
+        display: none !important;
+    }
+
+    .titulo_row .titulo_col {
+        height: max-content;
+        width: 90%;
+        margin: auto;
+        padding: 20px !important;
+    }
+
+    #carouselExampleInterval .carousel-inner .carousel-item figure img {
+        object-position: right;
+    }
+
+    /* SERVICIOS_DESTACADOS */
+    .card_destacados {
+        padding: 0px 10px;
+    }
+
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 40px auto;
+    }
+
+    .card_destacados .row .card {
+        padding: 20px 0px;
+    }
+
+    /* SERVICIOS DESTACADOS  */
+
+    .card_destacados {
+        margin: 30px auto;
+    }
+
+    .card_destacados .row .card figure img {
+        height: 200px;
+    }
+
+    .modal-body #modalBody {
+        height: 40dvh;
+        overflow-y: auto;
+    }
+
+    .modal-body .contenido {
+        padding: 40px 20px !important;
+    }
+
+
+    .modal-body .imagen {
+        clip-path: polygon(50% 0, 99% 43%, 100% 100%, 0 100%, 0 43%);
+    }
+
+    .cerrar {
+        height: 40px;
+        width: 40px;
+        right: 0px;
+        top: -1px;
+    }
+
+}

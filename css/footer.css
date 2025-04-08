@@ -1,0 +1,242 @@
+/* footer */
+
+footer {
+    box-shadow: 0px -3px 3px 0px var(--sombra);
+    padding: 30px 50px !important;
+    margin-top: 50px;
+}
+
+footer .logo {
+    width: 60%;
+    object-fit: contain;
+}
+
+footer .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .text ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0px !important;
+}
+
+footer .text ul li {
+    color: var(--gris);
+    font-size: 1.3rem !important;
+    padding: 5px 10px;
+}
+
+
+footer .datos h4 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--gris);
+}
+
+footer .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 4rem;
+}
+
+footer .redes ion-icon:nth-child(1) {
+    color: rgb(31, 6, 173);
+}
+
+footer .redes ion-icon:nth-child(2) {
+    color: rgb(173, 6, 148);
+}
+
+footer .redes ion-icon:nth-child(3) {
+    color: rgb(6, 120, 173);
+}
+
+footer .redes ion-icon:nth-child(4) {
+    color: rgb(255, 54, 36);
+}
+
+/* PORTATIL */
+@media screen and (min-width: 1000px) and (max-width:1650px) {
+
+    footer {
+        padding: 20px 30px !important;
+        margin-top: 30px;
+    }
+
+    footer .logo {
+        width: 50%;
+        object-fit: contain;
+    }
+
+    footer .text ul {
+        gap: 20px;
+    }
+
+    footer .text ul li {
+        font-size: 0.9rem !important;
+    }
+
+
+    footer .redes {
+        font-size: 3rem;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 650px) and (max-width:990px) {
+    /* footer */
+
+    footer {
+        padding: 20px 30px !important;
+        margin-top: 30px;
+    }
+
+    footer .logo {
+        width: 200px;
+        margin: auto;
+
+    }
+
+    footer .text:first-child {
+        gap: 10px;
+        border-bottom: 1px solid var(--gris);
+        margin-bottom: 20px;
+    }
+
+    footer .text ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .text ul li {
+        font-size: 0.9rem !important;
+    }
+
+    footer .datos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    footer .datos h4 {
+        gap: 10px;
+        margin: auto;
+    }
+
+    footer .redes {
+        gap: 10px;
+        font-size: 3rem;
+    }
+}
+
+/* CELULAR */
+@media screen and (min-width: 421px) and (max-width:650px) {
+    /* footer */
+
+    footer {
+        padding: 20px 30px !important;
+        margin-top: 30px;
+    }
+
+    footer .logo {
+        width: 200px;
+        margin: auto;
+
+    }
+
+    footer .text:first-child {
+        gap: 10px;
+        border-bottom: 1px solid var(--gris);
+        margin-bottom: 20px;
+    }
+
+    footer .text ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .text ul li {
+        font-size: 0.9rem !important;
+        text-align: center;
+    }
+
+    footer .datos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    footer .datos h4 {
+        gap: 10px;
+        margin: auto;
+    }
+
+    footer .redes {
+        gap: 10px;
+        font-size: 3rem;
+    }
+}
+
+
+/* CELULAR */
+@media screen and (min-width: 320px) and (max-width:420px) {
+
+    /* footer */
+
+    footer {
+        padding: 20px 30px !important;
+        margin-top: 30px;
+    }
+
+    footer .logo {
+        width: 200px;
+        margin: auto;
+
+    }
+
+    footer .text:first-child {
+        gap: 10px;
+        border-bottom: 1px solid var(--gris);
+        margin-bottom: 20px;
+    }
+
+    footer .text ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .text ul li {
+        font-size: 0.9rem !important;
+        text-align: center;
+    }
+
+    footer .datos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    footer .datos h4 {
+        gap: 10px;
+        margin: auto;
+    }
+
+    footer .redes {
+        gap: 10px;
+        font-size: 3rem;
+    }
+}
