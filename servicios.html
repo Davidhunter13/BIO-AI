@@ -7,6 +7,14 @@
     <title>Bio Ai - Servicios</title>
     <link rel="icon" href="imagenes/logos/logo.png" type="image/png">
 
+    <!-- LINK DE ANIMATION  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- LINK ANIMACION SCROOLL  -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- ION-ICONS  -->
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -21,8 +29,8 @@
     <link rel="stylesheet" href="css/servicios.css">
     <link rel="stylesheet" href="css/footer.css">
 
-      <!-- scroll -->
-      <script>
+    <!-- scroll -->
+    <script>
         configObj = {
             "buttonD": "M8 17.333h5.333v4C13.333 22.806 14.527 24 16 24c1.473 0 2.667-1.194 2.667-2.667v-4H24L16 8l-8 9.333z",
             "buttonT": "translate(-1088 -172) translate(832 140) translate(32 32) translate(224)",
@@ -97,6 +105,8 @@
 
 <body>
 
+
+
     <div id="loader">
         <span class="loader"></span>
     </div>
@@ -123,6 +133,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contactenos.html">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link login" href="login.html">Login</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -130,6 +143,12 @@
     </header>
 
     <main>
+
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+
 
         <!-- BANNER  -->
         <section id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -149,7 +168,7 @@
             </main>
 
             <div class="row titulo_row">
-                <div class="col-lg-6 col-12 titulo_col">
+                <div class="col-lg-6 col-12 titulo_col animate__animated animate__backInLeft">
                     <h1>Nuestros <strong>Servicios</strong>
                     </h1>
                     <p>En BioAI Medical Technologies, combinamos inteligencia artificial y tecnología médica para
@@ -166,7 +185,7 @@
 
         <section class="container card_destacados">
             <h2>Servicios</h2>
-            <div class="row" id="servicios">
+            <div class="row" id="servicios" data-aos="fade-up" data-aos-duration="1000">
             </div>
         </section>
 
@@ -179,11 +198,11 @@
             <div class="modal-content">
                 <div class="modal-body row p-0">
                     <button type="button" class="cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="col-lg-7 m-0 contenido"> <!-- mx-auto centra horizontalmente si es necesario -->
+                    <div class="col-lg-7 m-0 contenido animate__animated animate__fadeInLeft"> <!-- mx-auto centra horizontalmente si es necesario -->
                         <h2 class="m-0 p-0" id="titulo"></h2> <!-- centrado del texto -->
-                        <div class="m-0" id="modalBody"></div> <!-- centrado del contenido -->
+                        <div class="m-0  " id="modalBody"></div> <!-- centrado del contenido -->
                     </div>
-                    <div class="col-lg-5 m-0 imagen"> <!-- mx-auto centra horizontalmente si es necesario -->
+                    <div class="col-lg-5 m-0 imagen animate__animated animate__fadeInRight"> <!-- mx-auto centra horizontalmente si es necesario -->
                         <img src="" alt="imagen" id="imagen">
                     </div>
                 </div>
@@ -242,6 +261,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
+    <!-- LINK ANIMACION SCROOLL  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 
     <script src="js/servicios.js"></script>
 </body>

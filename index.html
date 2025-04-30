@@ -16,6 +16,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
+    <!-- LINK DE ANIMATION  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- LINK ANIMACION SCROOLL  -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- LINK DE CSS  -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
@@ -96,6 +104,9 @@
 </head>
 
 <body>
+
+
+
     <div id="loader">
         <span class="loader"></span>
     </div>
@@ -122,6 +133,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contactenos.html">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link login" href="login.html">Login</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -129,6 +143,15 @@
     </header>
 
     <main>
+
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
+        <div class="flotante"></div>
 
 
         <!-- BANNER  -->
@@ -164,7 +187,7 @@
                 <div class="col-lg-6 col-12 titulo_col titulo_col_2">
 
                 </div>
-                <div class="col-lg-6 col-12 titulo_col">
+                <div class="col-lg-6 col-12 titulo_col animate__animated animate__backInRight">
                     <h1>Innovación y Precisión Médica con <strong>IA</strong>
                     </h1>
                     <p>Trabajamos para cuidar la salud mediante soluciones avanzadas en inteligencia artificial.</p>
@@ -175,7 +198,7 @@
 
         <!-- SERVICIOS DESTACADOS -->
 
-        <section class="container card_destacados">
+        <section class="container card_destacados" data-aos="fade-up" data-aos-duration="1000">
             <h2>Servicios destacados</h2>
             <div class="row">
                 <article class="card col-lg-6 col-12">
@@ -213,7 +236,7 @@
 
         <section class="container-fluid card_tegnologia p-0">
             <div class="row p-0 m-0">
-                <article class="col-lg-7 col-12 m-0 text_article">
+                <article class="col-lg-7 col-12 m-0 text_article" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="m-0 p-0">BioAi Medical <strong>Technologies</strong></h2>
                     <p class="card-text m-0 p-0">
                         Combinamos la inteligencia artificial con tecnología médica de vanguardia para ofrecer
@@ -223,19 +246,19 @@
                         confiables y tratamientos personalizados.
                     </p>
                 </article>
-                <article class="col-lg-5 col-12 m-0 img_article img_before">
+                <article class="col-lg-5 col-12 m-0 img_article img_before" data-aos="flip-down"  data-aos-duration="1000">
                     <img src="imagenes/tecnologia/imagen_1.png" alt="Imagen 1">
                 </article>
             </div>
         </section>
 
         <!-- Quiénes Somos -->
-        <section class="container-fluid card_tegnologia p-0">
+        <section class="container-fluid card_tegnologia p-0" >
             <div class="row p-0 m-0 card_somos">
-                <article class="col-lg-5 col-12 m-0 img_article img_before_2">
+                <article class="col-lg-5 col-12 m-0 img_article img_before_2" data-aos="flip-down"  data-aos-duration="1000">
                     <img src="imagenes/somos/imagen_1.png" alt="Imagen 1">
                 </article>
-                <article class="col-lg-7 col-12 m-0 text_article">
+                <article class="col-lg-7 col-12 m-0 text_article" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="m-0 p-0">Quiénes <strong>Somos</strong></h2>
                     <p class="card-text m-0 p-0">
                         Fundada en 2024, BioAI Medical Technologies nace con la misión de transformar el
@@ -252,7 +275,7 @@
         <!-- Sostenibilidad y Responsabilidad Social -->
         <section class="container-fluid card_tegnologia card_sotenibilidad">
             <div class="row p-0 m-0">
-                <article class="col-12 m-0 text_article text-center">
+                <article class="col-12 m-0 text_article text-center" data-aos="zoom-in" data-aos-duration="1000">
                     <h2 class="m-0 p-0">Sostenibilidad y <strong>Responsabilidad Social </strong></h2>
                     <p class="card-text m-0 p-0">
                         En nuestra empresa, la investigación y el desarrollo son el núcleo de nuestra misión. Trabajamos
@@ -269,28 +292,28 @@
         <section class="container card_tegnologia card_equipo_padre">
             <h2 class="m-0 p-0">Nuestro Equipo de Innovadores</h2>
             <div class="row p-0 mt-5">
-                <article class="col-lg-3 col-md-6 col-12 m-0 card_equipo text-center">
+                <article class="col-lg-3 col-md-6 col-12 m-0 card_equipo text-center" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="imagenes/equipo/imagen_1.png" alt="">
                     <h4 class="m-0 p-0">Dr. Juan Pérez</h4>
                     <p class="card-text m-0 p-0">
                         Director Médico
                     </p>
                 </article>
-                <article class="col-lg-3 col-md-6 col-12 m-0  card_equipo text-center">
+                <article class="col-lg-3 col-md-6 col-12 m-0  card_equipo text-center" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="imagenes/equipo/imagen_3.png" alt="">
                     <h4 class="m-0 p-0">Ing. María Gómez</h4>
                     <p class="card-text m-0 p-0">
                         Dra. Tecnologia
                     </p>
                 </article>
-                <article class="col-lg-3 col-md-6 col-12 m-0  card_equipo text-center">
+                <article class="col-lg-3 col-md-6 col-12 m-0  card_equipo text-center" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="imagenes/equipo/imagen_4.png" alt="">
                     <h4 class="m-0 p-0">Sara Rodriguez</h4>
                     <p class="card-text m-0 p-0">
                         Ing Sistemas
                     </p>
                 </article>
-                <article class="col-lg-3 col-md-6 col-12 m-0  card_equipo text-center">
+                <article class="col-lg-3 col-md-6 col-12 m-0  card_equipo text-center" data-aos="zoom-in-up" data-aos-duration="1000">
                     <img src="imagenes/equipo/imagen_2.png" alt="">
                     <h4 class="m-0 p-0">Dr. Luis Rodríguez</h4>
                     <p class="card-text m-0 p-0">
@@ -298,7 +321,7 @@
                     </p>
                 </article>
 
-                <div class="col-12 mt-5 p-0 text-center">
+                <div class="col-12 mt-5 p-0 text-center" data-aos="fade-in" data-aos-duration="1000">
                     <p>Contamos con un equipo de profesionales altamente calificados en inteligencia artificial,
                         ingeniería
                         biomédica y salud. Nuestro equipo combina experiencia técnica y clínica para ofrecer soluciones
@@ -351,6 +374,13 @@
 
     <!-- jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!-- LINK ANIMACION SCROOLL  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 
     <script src="js/home.js"></script>
 

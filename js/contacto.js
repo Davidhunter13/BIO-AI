@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
   
@@ -21,7 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
   
-      // Simula el envío
+      // Guardar en localStorage como base de datos db_contacto
+      const nuevoContacto = {
+        nombre,
+        correo,
+        asunto,
+        mensaje,
+        fecha: new Date().toISOString()
+      };
+  
+      let contactos = JSON.parse(localStorage.getItem('db_contacto')) || [];
+      contactos.push(nuevoContacto);
+      localStorage.setItem('db_contacto', JSON.stringify(contactos));
+  
       mostrarToast("¡Gracias por tu mensaje! Nos pondremos en contacto pronto.", "success");
       form.reset();
     });

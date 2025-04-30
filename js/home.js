@@ -11,3 +11,15 @@ function loading_spin(estado) {
         $('#loader').hide();
     }
 }
+
+const flotantes = document.querySelectorAll('.flotante');
+const bodyHeight = document.body.scrollHeight; // Altura total del body
+const spacing = bodyHeight / flotantes.length; // Espaciado entre elementos
+
+flotantes.forEach((el, index) => {
+    // Posición vertical con un poco de aleatoriedad
+    const y = spacing * index + (Math.random() * spacing * 0.5);
+    
+    // Puedes mantener left/right desde el CSS
+    el.style.top = `${y}px`;
+});

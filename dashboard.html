@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Ai - Sostenibilidad</title>
+    <title>Dashboard</title>
     <link rel="icon" href="imagenes/logos/logo.png" type="image/png">
 
     <!-- ION-ICONS  -->
@@ -16,7 +16,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-
     <!-- LINK DE ANIMATION  -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -25,10 +24,9 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
     <!-- LINK DE CSS  -->
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/sostenibilidad.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
 
     <!-- scroll -->
@@ -120,20 +118,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item seleccionado">
-                            <a class="nav-link" href="sostenibilidad.html">Sostenibilidad</a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactenos.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link login" href="login.html">Login</a>
+                            <a class="nav-link bg-danger text-white" href="login.html">Cerrar Sesión</a>
                         </li>
                     </ul>
                 </div>
@@ -142,142 +128,40 @@
     </header>
 
     <main>
-
-
-        <div class="flotante"></div>
-        <div class="flotante"></div>
-        <div class="flotante"></div>
-        <div class="flotante"></div>
-        <div class="flotante"></div>
-
-        <div class="seccion-sostenibilidad">
-            <div class="triangulos">
-                <div class="triangle-abajo"></div>
-                <div class="triangle-arriba"></div>
-            </div>
-
-            <div class="contenido-texto animate__animated animate__backInRight">
-                <h1>
-                    <span>Sostenibilidad</span> y
-                    <span class="resaltado">Responsabilidad Social</span>
-                </h1>
-                <p>Comprometidos con un futuro donde la salud y el planeta prosperen juntos.</p>
+        <div class="container mt-4 tabla">
+            <h4>Mensajes recibidos</h4>
+            <div class="table-responsive">
+                <table id="tabla_contactos" class="table table-striped table-bordered table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Asunto</th>
+                            <th>Mensaje</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
         </div>
 
-
-
-        <!-- Compromiso con el Medio Ambiente -->
-        <section class="bloque blanco" data-aos="fade-up" data-aos-duration="1000">
-            <h2>Compromiso con el <span>Medio Ambiente</span></h2>
-            <p>En Bial Medical Technologies, estamos comprometidos con la sostenibilidad y la innovación para minimizar
-                nuestro impacto ambiental y fomentar un desarrollo logístico sostenible.</p>
-        </section>
-
-        <section class="bloque azul contenido-ambiente" data-aos="fade-up" data-aos-duration="1000" >
-            <div class="columna-img">
-                <img src="imagenes/sostenibilidad/arbol.png" alt="Maceta">
-            </div>
-            <div class="columna-texto">
-                <h3>Eficiencia Energética y Reducción de Huella de Carbono</h3>
-                <ul>
-                    <li>Implementamos centros de datos con consumo energético optimizado.</li>
-                    <li>Usamos fuentes de energía renovable para reducir la emisión de carbono.</li>
-                    <li>Optimizamos procesos logísticos para minimizar el impacto ambiental.</li>
-                </ul>
-
-                <h3>Reciclaje y Gestión Responsable de Residuos</h3>
-                <ul>
-                    <li>Reciclamos componentes electrónicos y materiales blandos.</li>
-                    <li>Colaboramos con proveedores certificados ecológicamente.</li>
-                </ul>
-
-                <h3>Uso Responsable de Recursos</h3>
-                <ul>
-                    <li>Reducimos el consumo de agua mediante tecnologías de reciclado.</li>
-                    <li>Utilizamos materiales sostenibles en la fabricación de productos.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="galeria-ambiental" data-aos="fade-up" data-aos-duration="1000">
-            <div class="galeria-grid">
-                <div class="img-izquierda">
-                    <img src="imagenes/sostenibilidad/logo.png" alt="Imagen izquierda">
-                </div>
-                <div class="bloque-derecha">
-                    <div class="img-arriba">
-                        <img src="imagenes/sostenibilidad/pantano.png" alt="Pantano">
-                    </div>
-                    <div class="img-abajo">
-                        <img src="imagenes/sostenibilidad/medio.png" alt="Medio ambiente">
-                        <img src="imagenes/sostenibilidad/animal.png" alt="Animal">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Responsabilidad Social Empresarial -->
-        <section class="bloque blanco" data-aos="fade-up" data-aos-duration="1000">
-            <h2>Responsabilidad <span>Social Empresarial</span></h2>
-            <p>En Bial Medical Technologies, creemos que la tecnología debe ser una herramienta para enfocarse en
-                mejorar el acceso a servicios de salud y apoyar a las comunidades más vulnerables.</p>
-        </section>
-
-        <!-- Compromiso Social -->
-        <section class="bloque contenido-social" >
-            <div class="columna-texto" data-aos="fade-up" data-aos-duration="1000">
-                <h3>Acceso a la Salud en Comunidades Rurales</h3>
-                <ul>
-                    <li>Donación de equipos de diagnóstico asistido por IA a hospitales rurales.</li>
-                    <li>Capacitación para personal médico en áreas de difícil acceso.</li>
-                    <li>Proyectos de telemedicina para conectar a especialistas con comunidades remotas.</li>
-                </ul>
-
-                <h3>Programas de Capacitación y Formación</h3>
-                <ul>
-                    <li>Alianzas con universidades y centros de salud para formar profesionales en tecnología médica.
-                    </li>
-                    <li>Programas gratuitos de certificación para médicos y personal técnico.</li>
-                </ul>
-
-                <h3>Colaboración con ONGs y Gobiernos Locales</h3>
-                <ul>
-                    <li>Desarrollo de tecnologías de monitoreo e infraestructura de salud en comunidades vulnerables.
-                    </li>
-                    <li>Convenios de telemedicina con hospitales públicos y centros rurales.</li>
-                    <li>Participación en campañas de prevención y educación sanitaria.</li>
-                </ul>
-            </div>
-
-            <div class="columna-img" data-aos="flip-down"  data-aos-duration="1000">
-                <img src="imagenes/sostenibilidad/manos.png" alt="Saludo">
-            </div>
-        </section>
-
-        <!-- Galería Social -->
-        <section class="galeria-social" data-aos="flip-down"  data-aos-duration="1000">
-            <img src="imagenes/sostenibilidad/computador.png" alt="Equipo trabajando">
-            <img src="imagenes/sostenibilidad/juzgado.png" alt="Tecnología médica">
-            <img src="imagenes/sostenibilidad/cirujanos.png" alt="Reunión de trabajo">
-        </section>
 
     </main>
     <!-- FOOTER  -->
     <footer class="container-fluid">
         <div class="row p-0 m-0">
-            <div class="col-lg-3 col-12 text" >
+            <div class="col-lg-3 col-12 text">
                 <img class="logo" src="imagenes/logos/logo.png" alt="logo">
             </div>
 
             <div class="col-lg-9 col-12 text">
                 <div>
                     <ul class="d-flex">
-                        <li class="nav-item ">
+                        <li class="nav-item seleccionado">
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item seleccionado">
+                        <li class="nav-item">
                             <a class="nav-link" href="sostenibilidad.html">Sostenibilidad</a>
                         </li>
                         <li class="nav-item">
@@ -307,16 +191,15 @@
     <!-- jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-
     <!-- LINK ANIMACION SCROOLL  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
-      </script>
+    </script>
 
     <script src="js/home.js"></script>
-
+    <script src="js/dashboard.js"></script>
 
     <!-- SCRIPT DE BOOTSTRAP POR CDN  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"

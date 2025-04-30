@@ -107,7 +107,6 @@ main {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
-  background-color: #fff;
 }
 
 .formulario, .info {

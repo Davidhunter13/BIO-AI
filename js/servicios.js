@@ -114,10 +114,10 @@ function cargarServicios() {
     const db = JSON.parse(localStorage.getItem("db"));
     db.servicios.forEach(servicio => {
         const articulo = document.createElement("article");
-        articulo.className = "card col-lg-4 col-md-6 col-12";
+        articulo.className = "card col-lg-4 col-md-6 col-12" ;
 
         articulo.innerHTML = `
-            <figure class="row p-0 m-0">
+            <figure class="row p-0 m-0" >
                 <img src="${servicio.imagen}" class="col-12" alt="${servicio.titulo}">
                 <figcaption class="card-body col-12">
                     <h3 class="m-0 p-0">${servicio.titulo}</strong></h4>
@@ -146,7 +146,7 @@ function detalle_servicio(id) {
     }
 
     // Mostrar el modal con Bootstrap después de 1 segundo
-    setTimeout(function() {
+    setTimeout(function () {
         loading_spin(false);
     }, 1000);
 }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="imagenes/logos/logo.png" type="image/png">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- ION-ICONS  -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- LINK DE BOOTSTRAP POR CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- LINK DE ANIMATION  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- LINK ANIMACION SCROOLL  -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- LINK DE CSS  -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+
+          <a class="link btn" href="index.html">Inicio</a>
+
+    <div id="loader">
+        <span class="loader"></span>
+    </div>
+    <div class="container ">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 image-container">
+                <img src="imagenes/logos/bia_3.png" alt="Imagen del programa">
+            </div>
+            <div class="col-md-6">
+                <div class="login-container animate__animated animate__backInRight">
+                    <h3 class="text-center">Iniciar Sesión</h3>
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="usuario" name="usuario"
+                                placeholder="Ingrese su usuario" required
+                                value="drparra@poli.edu.co">
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="Ingrese su contraseña" required value="1234">
+                                <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-enviar">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- jquery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <!-- LINK ANIMACION SCROOLL  -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+        <script>
+            AOS.init();
+          </script>
+
+        <script src="js/home.js"></script>
+
+        <script src="js/login.js"></script>
+
+</body>
+
+</html>
